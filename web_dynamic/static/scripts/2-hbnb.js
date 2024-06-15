@@ -13,10 +13,10 @@ $(document).ready(function() {
 
         // Update the h4 tag inside the div Amenities
         let amenitiesList = Object.values(selectedAmenities).join(', ');
-        $('div.amenities h4').text(amenitiesList || 'Amenities');
+        $('div.amenities h4').text(amenitiesList || '');
     });
     // sending a request
-    $.get("http://0.0.0.0:5001/api/v1/status/", function(data) {
+    $.get("http://127.0.0.1:5001/api/v1/status/", function(data) {
 	if (data.status === "OK") {
 	   $('div#api_status').addClass("available");
 	} else {

@@ -13,6 +13,6 @@ $(document).ready(function() {
 
         // Update the h4 tag inside the div Amenities
         let amenitiesList = Object.values(selectedAmenities).join(', ');
-        $('div.amenities h4').text(amenitiesList || 'Amenities');
+        $('div.amenities h4').text(amenitiesList || '');
     });
 });
